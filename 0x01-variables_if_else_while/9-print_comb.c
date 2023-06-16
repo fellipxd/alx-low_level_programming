@@ -4,28 +4,23 @@
  * main - Entry point of the program
  *
  * Description:
- *   Prints all possible different combinations of two digits separated by ", "
+ *   Prints all possible combinations of single-digit numbers separated by ", "
  *   in ascending order using the putchar function.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int tens_digit; /* Variable for tens digit */
-	int ones_digit; /* Variable for ones digit */
+	int digit; /* Variable for the digit */
 
-	/* Print the combinations of two digits */
-	for (tens_digit = 0; tens_digit <= 8; tens_digit++)
+	/* Print the combinations of single-digit numbers */
+	for (digit = 0; digit <= 9; digit++)
 	{
-		for (ones_digit = tens_digit + 1; ones_digit <= 9; ones_digit++)
+		putchar(digit + '0');
+		if (digit != 9)
 		{
-			putchar(tens_digit + '0');
-			putchar(ones_digit + '0');
-			if (tens_digit != 8 || ones_digit != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
