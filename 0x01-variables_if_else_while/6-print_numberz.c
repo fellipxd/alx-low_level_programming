@@ -12,9 +12,9 @@ int main(void)
 {
 	int number; /* Variable to store the numbers */
 
-	/* Print single digit numbers */
+	/* Print single digit numbers using putchar */
 	for (number = 0; number < 10; number++)
-		putchar(number + '0');
+		putchar(number + 48);
 
 	putchar('\n'); /* Print new line character */
 
