@@ -11,22 +11,22 @@
  */
 int main(void)
 {
-	int firstDigit; /* Variable for the first digit */
-	int secondDigit; /* Variable for the second digit */
-	int thirdDigit; /* Variable for the third digit */
+	int digit1; /* Variable for the first digit */
+	int digit2; /* Variable for the second digit */
+	int digit3; /* Variable for the third digit */
 
 	/* Print the combinations of three digits */
-	for (firstDigit = 0; firstDigit <= 7; firstDigit++)
+	for (digit1 = 0; digit1 <= 7; digit1++)
 	{
-		for (secondDigit = firstDigit + 1; secondDigit <= 8; secondDigit++)
+		for (digit2 = digit1 + 1; digit2 <= 8; digit2++)
 		{
-			for (thirdDigit = secondDigit + 1; thirdDigit <= 9; thirdDigit++)
+			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
 			{
-				putchar(firstDigit + '0');
-				putchar(secondDigit + '0');
-				putchar(thirdDigit + '0');
+				putchar(digit1 + '0');
+				putchar(digit2 + '0');
+				putchar(digit3 + '0');
 
-				if (firstDigit != 7 || secondDigit != 8 || thirdDigit != 9)
+				if (digit1 != 7 || digit2 != 8 || digit3 != 9)
 				{
 					putchar(',');
 					putchar(' ');
