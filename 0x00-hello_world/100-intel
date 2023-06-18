@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Generate assembly code
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
+
